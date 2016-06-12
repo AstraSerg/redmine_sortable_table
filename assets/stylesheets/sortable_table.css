@@ -1,0 +1,46 @@
+/* sortable table plugin*/
+
+/*
+   Add the following to your CSS file should you wish the cursor to
+   "wait" while the script is processing the sort
+
+body.sort-active *
+        {
+        cursor:wait;
+        }
+*/
+
+table th.sortable,
+table th.sortable-text,
+table th.sortable-date,
+table th.sortable-keep,
+table th.sortable-date-dmy,
+table th.sortable-numeric,
+table th.sortable-currency,
+table th.sortable-sortByTwelveHourTimestamp,
+table th.sortable-sortIPAddress,
+table th.sortable-sortEnglishLonghandDateFormat,
+table th.sortable-sortScientificNotation,
+table th.sortable-sortImage,
+table th.sortable-sortFileSize,
+table th.sortable-sortAlphaNumeric,
+table th.sortable-sortEnglishDateTime {
+	color: #4F6B72;
+	vertical-align:middle;
+	cursor:pointer; 
+	padding: 0 15px;}
+table th.forwardSort {
+	background:#CAE8EA url(/plugin_assets/redmine_sortable_table/images/downarrow.png) no-repeat 100% 0; }
+table th.reverseSort {
+	background:#CAE8EA url(/plugin_assets/redmine_sortable_table/images/uparrow.png) no-repeat 100% 0; }
+table thead th.forwardSort a,
+table thead th.reverseSort a {
+	color:#000;
+	text-decoration:none; }
+table th span {
+	display: none; }
+table th a {
+	text-decoration:none;
+	color: #4f6b72;
+	background:transparent; }
+
